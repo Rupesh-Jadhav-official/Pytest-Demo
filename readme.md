@@ -3,7 +3,7 @@
 
 ---
 
-## 🚀 Run Tests
+## Run Tests
 
 1. **Install dependencies**
    ```bash
