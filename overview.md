@@ -62,9 +62,9 @@ This is called the **AAA pattern** (Arrange-Act-Assert).
 
 ### Q: How do you test that a function raises an exception?
 
-Two approaches are shown in this project:
+Two approaches are there:
 
-**Manual try/except** (used in `tests/test_Maths.py`):
+**Manual try/except** (not used currently):
 ```python
 def test_divide_by_zero():
     try:
@@ -74,14 +74,14 @@ def test_divide_by_zero():
         pass  # Expected behavior
 ```
 
-**The pytest-idiomatic way** (not used here, but the preferred pattern):
+**The pytest-idiomatic way** (used here, preferred pattern):
 ```python
 def test_divide_by_zero():
     with pytest.raises(ValueError):
         divide(10, 0)
 ```
 
-`pytest.raises` is cleaner and produces better failure messages. This project uses the manual approach — worth mentioning in an interview as something you would improve.
+`pytest.raises` is cleaner and produces better failure messages.
 
 ---
 
