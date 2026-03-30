@@ -1,4 +1,5 @@
-#Simple unit tests for basic mathematical operations
+# Simple unit tests for basic mathematical operations
+import pytest
 
 def add(a, b):
     return a + b
@@ -21,8 +22,5 @@ def test_divide_valid():
     assert result == 5, f"Expected 5, got {result}"
 
 def test_divide_by_zero():
-    try:
+    with pytest.raises(ValueError):
         divide(10, 0)
-        assert False, "Expected ValueError but no exception was raised"
-    except ValueError:
-        pass  # Expected behavior

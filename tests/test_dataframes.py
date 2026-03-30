@@ -7,6 +7,7 @@ except ImportError:
 
 @pytest.mark.skipif(pd is None, reason="pandas is not installed")
 def test_dataframe_operations():
+    assert pd is not None
     data = {
         "Name": ["Alice", "Bob", "Charlie"],
         "Age": [25, 30, 35],
