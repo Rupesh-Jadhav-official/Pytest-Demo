@@ -1,4 +1,4 @@
-# Pytest Demo — Project Overview & Interview Guide
+# Pytest Demo — Project Overview
 
 ## Project Structure
 
